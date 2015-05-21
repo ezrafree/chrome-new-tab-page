@@ -1,0 +1,26 @@
+{
+	"chrome_url_overrides": {
+		"newtab": "newtab.html#newTab"
+	},
+	"content_security_policy": "default-src 'self';   script-src 'self' https://platform.twitter.com;   style-src 'self' 'unsafe-inline';   img-src 'self' data: chrome: filesystem:;   connect-src 'self' http: https: chrome-extension:;   frame-src http: https:",
+	"description": "An alternative to Chrome's New Tab page. Replaces the New Tab page with custom icons.",
+	"icons": {
+		"128": "img/icon128.png",
+		"16": "img/icon16.png",
+		"19": "img/icon19.png",
+		"48": "img/icon48.png"
+	},
+	"manifest_version": 2,
+	"minimum_chrome_version": "28",
+	"name": "New Tab",
+	"omnibox": {
+		"keyword": "f"
+	},
+	"permissions": [ "\u003Call_urls\u003E", "tabs", "management", "contextMenus" ],
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"version": "1.0.0",
+	"web_accessible_resources": [
+		"newtab.html",
+		"img/start-icons/*"
+	]
+}
